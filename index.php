@@ -11,7 +11,7 @@ include './interface/interfaceModel.php';
 include './model/playerModel.php';
 
 echo "Accueil";
-$playerModel = new PlayerModel(connect());
+$playerModel = new PlayerModel($bdd);
 
 $player = new PlayerController(
   new ViewPlayer(),
